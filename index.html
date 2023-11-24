@@ -1,0 +1,18 @@
+<html>
+    <div id="app"></div>
+    <!-- <script src="https://www.tencentwm.com/h5/v6/sw.js?t=1700639620788"></script> -->
+    <!-- <script src="/resources/vendor/dll.umd.68a018ba.js"></script> -->
+    <script>
+        // Check that service workers are registered
+        if ("serviceWorker" in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener("load", () => {
+            // navigator.serviceWorker.register("/sw-wizard.js");
+            navigator.serviceWorker.register("sw.js");
+          });
+        }
+      </script>    
+      <script type="module" crossorigin src="./polyfill.js"></script>
+    <!-- <script type="module" crossorigin src="/h5/v6/assets/pages/trans-application.d2898d69.js"></script> -->
+
+</html>
